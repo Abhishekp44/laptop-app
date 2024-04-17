@@ -1,0 +1,19 @@
+<h2>Laptops</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Brand</th>
+    <th>Model</th>
+    <th>Price</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let laptop of laptops">
+    <td>{{ laptop.id }}</td>
+    <td>{{ laptop.brand }}</td>
+    <td>{{ laptop.model }}</td>
+    <td>{{ laptop.price }}</td>
+    <td>
+      <button (click)="deleteLaptop(laptop.id)">Delete</button>
+    </td>
+  </tr>
+</table>

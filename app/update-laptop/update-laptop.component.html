@@ -1,0 +1,15 @@
+<h2>Update Laptop</h2>
+<div *ngIf="laptop">
+  <form>
+    <label>Brand:</label>
+    <input type="text" [(ngModel)]="updatedBrand">
+    <br>
+    <label>Model:</label>
+    <input type="text" [(ngModel)]="updatedModel">
+    <br>
+    <label>Price:</label>
+    <input type="number" [(ngModel)]="updatedPrice">
+    <br>
+    <button type="button" (click)="updateLaptop()">Update Laptop</button>
+  </form>
+</div>

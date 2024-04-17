@@ -1,0 +1,13 @@
+<h2>Add Laptop</h2>
+<form>
+  <label>Brand:</label>
+  <input type="text" [(ngModel)]="brand">
+  <br>
+  <label>Model:</label>
+  <input type="text" [(ngModel)]="model">
+  <br>
+  <label>Price:</label>
+  <input type="number" [(ngModel)]="price">
+  <br>
+  <button type="button" (click)="addLaptop()">Add Laptop</button>
+</form>
